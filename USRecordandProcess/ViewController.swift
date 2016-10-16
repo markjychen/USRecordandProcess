@@ -7,13 +7,27 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
-
+    var recordButton: UIButton!
+    
+    var recordingSession: AVAudioSession!
+    var whistleRecorder: AVAudioRecorder!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        title = "What's that whistle"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhistle))
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
     }
+    func addWhistle(){
+        let vc = RecordWhistleViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

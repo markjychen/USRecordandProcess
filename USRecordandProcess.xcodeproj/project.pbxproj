@@ -14,6 +14,9 @@
 		4DD1169D1DB3F1C500DE2F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD1169B1DB3F1C500DE2F2E /* LaunchScreen.storyboard */; };
 		4DD116A81DB3F1C500DE2F2E /* USRecordandProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD116A71DB3F1C500DE2F2E /* USRecordandProcessTests.swift */; };
 		4DD116B31DB3F1C500DE2F2E /* USRecordandProcessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD116B21DB3F1C500DE2F2E /* USRecordandProcessUITests.swift */; };
+		4DD116C21DB3F1EF00DE2F2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD116C11DB3F1EF00DE2F2E /* AVFoundation.framework */; };
+		4DD116C41DB3F1F700DE2F2E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD116C31DB3F1F700DE2F2E /* CloudKit.framework */; };
+		4DD116C61DB3F37400DE2F2E /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD116C51DB3F37400DE2F2E /* RecordWhistleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4DD116AE1DB3F1C500DE2F2E /* USRecordandProcessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USRecordandProcessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD116B21DB3F1C500DE2F2E /* USRecordandProcessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRecordandProcessUITests.swift; sourceTree = "<group>"; };
 		4DD116B41DB3F1C500DE2F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD116C11DB3F1EF00DE2F2E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4DD116C31DB3F1F700DE2F2E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		4DD116C51DB3F37400DE2F2E /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordWhistleViewController.swift; path = ../RecordWhistleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD116C41DB3F1F700DE2F2E /* CloudKit.framework in Frameworks */,
+				4DD116C21DB3F1EF00DE2F2E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 				4DD116A61DB3F1C500DE2F2E /* USRecordandProcessTests */,
 				4DD116B11DB3F1C500DE2F2E /* USRecordandProcessUITests */,
 				4DD116901DB3F1C500DE2F2E /* Products */,
+				4DD116C01DB3F1EF00DE2F2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +106,7 @@
 		4DD116911DB3F1C500DE2F2E /* USRecordandProcess */ = {
 			isa = PBXGroup;
 			children = (
+				4DD116C51DB3F37400DE2F2E /* RecordWhistleViewController.swift */,
 				4DD116921DB3F1C500DE2F2E /* AppDelegate.swift */,
 				4DD116941DB3F1C500DE2F2E /* ViewController.swift */,
 				4DD116961DB3F1C500DE2F2E /* Main.storyboard */,
@@ -123,6 +133,15 @@
 				4DD116B41DB3F1C500DE2F2E /* Info.plist */,
 			);
 			path = USRecordandProcessUITests;
+			sourceTree = "<group>";
+		};
+		4DD116C01DB3F1EF00DE2F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DD116C31DB3F1F700DE2F2E /* CloudKit.framework */,
+				4DD116C11DB3F1EF00DE2F2E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +283,7 @@
 			files = (
 				4DD116951DB3F1C500DE2F2E /* ViewController.swift in Sources */,
 				4DD116931DB3F1C500DE2F2E /* AppDelegate.swift in Sources */,
+				4DD116C61DB3F37400DE2F2E /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
